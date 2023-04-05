@@ -1,0 +1,16 @@
+<html>
+    <head>
+              
+    </head>
+    <body>
+        
+        <form action="/search" method = "GET">
+            <select name="comu">
+                {% for com in list %}
+                    <option value="{{com}}">{{com}}</option> 
+                {% endfor %}
+            </select>
+            <p><input type = "submit" value = "Clicca per conoscere i dati" /></p>
+        </form>
+    </body>
+</html>
